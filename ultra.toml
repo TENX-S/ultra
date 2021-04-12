@@ -1,0 +1,47 @@
+# This is a default config file for ultra. All of the settings are commented
+# out by default; if you wish to change them uncomment and modify as you see
+# fit. If any of the following options is not set, the default value will be
+# used.
+
+# Overlay the background or not
+# Default value is false
+#overlay_background = false
+
+# Settings for customizing your theme.
+# If the `preset` is set, the remaining fields will be ignored.
+# Available values for `preset`: "Dark", "Light". Default value is "Dark".
+# If the value of `overlay_background` is `true`, `background` will be ignored.
+#[theme]
+#preset = "Dark"
+#background = "#554236"
+#focus = "#f17c67"
+#board_border = "#BDC0BA"
+#board_header = "#58B2DC"
+#board_selected = "#A8D8B9"
+#board_unselected = "#FEDFE1"
+#serach_border = "#554236"
+#query = "#ffffff"
+#timeline_border = "#BDC0BA"
+#spectrum_border = "#BDC0BA"
+
+# Library location. Valid value is any absolute path.
+#lib_pos = "/any/absolute/path"
+# Default value:
+# Linux:   XDG_MUSIC_DIR/UltraMusic    /home/alice/Music/UltraMusic
+# macOS:   $HOME/Music/UltraMusic      /Users/Alice/Music/UltraMusic
+# Windows: {FOLDERID_Music}\UltraMusic C:\Users\Alice\Music\UltraMusic
+
+# Database location. Valid value is any absolute path.
+#db_pos = "/any/absolute/path"
+# Default value:
+# Linux:   $XDG_DATA_HOME/ultra or $HOME/.local/share/ultra /home/alice/.local/share/ultra
+# macOS:   $HOME/Library/Application Support/ultra          /Users/Alice/Library/Application Support/ultra
+# Windows: {FOLDERID_RoamingAppData}\ultra                  C:\Users\Alice\AppData\Roaming\ultra
+
+# Volume at startup. Valid value is 0 ～ 100.
+# Default value is 50
+#volume = 50
+
+# Debug or not
+# Default value is false
+#debug = false

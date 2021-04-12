@@ -1,0 +1,66 @@
+[package]
+name = "ultra"
+version = "1.0.0"
+authors = ["Ares <coldswind@pm.me>"]
+license = "MIT"
+edition = "2018"
+readme = "README.md"
+keywords = ["music", "player", "shell"]
+categories = ["command-line-utilities"]
+repository = "https://github.com/TENX-S/ultra"
+description = "A minimal music player in terminal"
+exclude = ["screenshots/*", ".github"]
+
+[dependencies]
+clap = "2"
+log = "0.4"
+id3 = "0.5"
+rayon = "1"
+toml = "0.5"
+fern = "0.6"
+rand = "0.8"
+anyhow = "1"
+notify = "4"
+bincode = "1"
+walkdir = "2"
+chrono = "0.4"
+thiserror = "1"
+dirs-next = "2"
+metaflac = "0.2"
+console = "0.14"
+backtrace = "0.3"
+lazy_static = "1"
+crossterm = "0.18"
+parking_lot = "0.11"
+unicode-width = "0.1"
+
+[dependencies.rusqlite]
+version = "0.24"
+features = ["bundled"]
+
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[dependencies.tui]
+version = "0.14"
+features = ["crossterm"]
+default-features = false
+
+[dependencies.rodio]
+branch = "master"
+git = "https://github.com/TENX-S/rodio"
+
+[build-dependencies]
+anyhow = "1"
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[[bin]]
+name = "uta"
+path = "src/bin/main.rs"
